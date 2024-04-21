@@ -3,7 +3,6 @@
 		"target": "ES5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": false,
-		"noImplicitAny": false,
 		"skipLibCheck": true,
 		"strict": true,
 		"strictPropertyInitialization": false,
