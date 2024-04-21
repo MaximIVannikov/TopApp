@@ -19,6 +19,7 @@
 .price,
 .priceTitle {
 	grid-column: pricestart / priceend;
+
 	white-space: nowrap;
 }
 
@@ -30,6 +31,7 @@
 .rating,
 .rateTitle {
 	grid-column: ratestart / end;
+
 	white-space: nowrap;
 }
 
@@ -45,6 +47,9 @@
 
 .advBlock {
 	grid-column: middle / end;
+
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .logo img {
@@ -103,11 +108,6 @@
 	margin-left: 20px;
 }
 
-.advBlock {
-	font-size: 16px;
-	line-height: 22px;
-}
-
 .advTitle {
 	margin-bottom: 5px;
 
@@ -129,13 +129,14 @@
 
 .characteristics {
 	display: grid;
-	grid-template-columns: auto 1fr auto;
-	padding-right: 60px;
 	align-items: baseline;
-	gap: 10px;
+
+	padding-right: 60px;
 
 	font-size: 16px;
 	line-height: 32px;
+	grid-template-columns: auto 1fr auto;
+	gap: 10px;
 }
 
 .characteristicsName {
@@ -143,8 +144,9 @@
 }
 
 .characteristicsDots {
-	border-bottom: 1px dashed var(--gray-light);
 	margin-bottom: 5px;
+
+	border-bottom: 1px dashed var(--gray-light);
 }
 
 .rateTitle a {
@@ -153,10 +155,11 @@
 
 .reviews {
 	overflow: hidden;
+
 	padding: 30px;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (width <= 1320px) {
 	.product {
 		grid-template-columns: 70px 30px auto 40px auto 40px 1fr;
 		grid-template-areas:
@@ -174,6 +177,7 @@
 
 	.logo {
 		grid-area: logo;
+
 		margin-bottom: 20px;
 	}
 
@@ -183,6 +187,7 @@
 
 	.tags {
 		grid-area: tags;
+
 		margin-bottom: 20px;
 	}
 
@@ -220,6 +225,7 @@
 
 	.feature {
 		grid-area: feature;
+
 		margin-bottom: 20px;
 	}
 
@@ -236,7 +242,7 @@
 	}
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (width <= 640px) {
 	.product {
 		grid-template-columns: 70px 30px 1fr;
 		grid-template-areas:
@@ -266,7 +272,7 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width <= 480px) {
 	.product {
 		grid-template-columns: 1fr;
 		grid-template-areas:

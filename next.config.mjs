@@ -2,6 +2,7 @@
 import withSvgr from 'next-plugin-svgr';
 
 const nextConfig = withSvgr({
+	// output: 'export',
 	images: {
 		domains: ['courses-top.ru', 'cdn-bucket.hb.bizmrg.com', 'old-images.hb.ru-msk.vkcs.cloud'],
 	},
